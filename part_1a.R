@@ -11,7 +11,8 @@ library(plyr)
 library(dplyr)
 library(relaimpo)
 
-setwd("/projects/pd_lab/sha59/LME/run003")
+# Run this part for each model ensemble
+setwd("/projects/pd_lab/sha59/LME/run003") # Change to folder containing all variables of one model run
 
 ncname <- list.files(pattern=".nc")
 dname <- vector()
@@ -155,13 +156,13 @@ f_m_ann[f_m_ann == "NaN"]  <- NA
 DSTFLXT_ann[DSTFLXT_ann == "NaN"]  <- NA
 H2OSOI_ann[H2OSOI_ann == "NaN"] <- NA
 
-save.image(file="LME_009_ann.RData")
+save.image(file="LME_003_ann.RData") # Saves R 
 
 # Regression analysis
 
 # Do this only to test H2OSOI
-SOILWATER <- H2OSOI
-SOILWATER_ann  <- H2OSOI_ann
+#SOILWATER <- H2OSOI
+#SOILWATER_ann  <- H2OSOI_ann
 
 R2 <- array(data = NA, dim = c(144,96))
 lmg_f_m <- array(data = NA, dim = c(144,96))
@@ -230,7 +231,7 @@ for(i in 1:144){
   }
 }
 
-save.image(file="LME_002_coef_H2OSOI.RData")
+save.image(file="LME_003_coef_H2OSOI.RData")
 
 R2 <- array(data = NA, dim = c(144,96))
 lmg_f_m <- array(data = NA, dim = c(144,96))
@@ -299,7 +300,7 @@ for(i in 1:144){
   }
 }
 
-save.image(file="LME_002_ann_coef_H2OSOI.RData")
+save.image(file="LME_003_ann_coef_H2OSOI.RData")
 
 # Calculate decades
 
@@ -438,10 +439,12 @@ for(i in 1:144){
   }
 }
 
-save.image(file="LME_002_dec_coef_H2OSOI.RData")
+save.image(file="LME_003_dec_coef_H2OSOI.RData")
+
+# END OF SPECIFIC MODEL ENSEMBLE MEMBER ANALYSIS
 
 ####################################################
-# Relative importance of variables to bare ground, only for the SW
+# Relative importance of variables to bare ground, only for the SW. Same analysis for the Southwest
 library('ncdf4')
 library(plyr)
 library(dplyr)
