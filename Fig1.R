@@ -1,5 +1,10 @@
-###
-# Script for Fig. 1 in Dust-Drought Nexus in the Southwestern United States: A Proxy-Model Comparison Approach. Written by S.Arcusa
+########################################################################################
+# Project: Dust-Drought Nexus in the Southwestern United States: A Proxy-Model Comparison
+# Prepared by: S. Arcusa
+# Version: 1
+# Date: 07-10-2019
+# Part 0: Creating figure 1
+#######################################################################################
 
 library(ncdf4)
 library(plyr)
