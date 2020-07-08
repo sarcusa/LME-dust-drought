@@ -3,7 +3,7 @@
 # Prepared by: S. Arcusa
 # Version: 1
 # Date: 07-10-2019
-# Part 1: Script to calculate multiple linear regression worldwide and the Southwest
+# Part 1a: Script to calculate multiple linear regression worldwide and the Southwest
 #######################################################################################
 
 library('ncdf4')
