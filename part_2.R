@@ -1,5 +1,5 @@
 ########################################################################################
-# Project: Dust-drought relationship in models and paleorecords
+# Project: Dust-Drought Nexus in the Southwestern United States: A Proxy-Model Comparison
 # Prepared by: S. Arcusa
 # Version: 1
 # Date: 07-10-2019
@@ -26,7 +26,7 @@ WETLAND <- ncvar_get(ncin,"PCT_WETLAND")
 lon <- ncvar_get(ncin,"LONGXY")[,1]
 lat <- ncvar_get(ncin,"LATIXY")[1,]
 
-folder.dir = "/projects/pd_lab/sha59/LME"
+folder.dir = "/projects/pd_lab/sha59/LME" # change to directory of parent folder from where files from part_1 were saved
 
 all.ens  <- sprintf('%0.3d',2:11)
 all.ens.names <- paste0(sprintf('%0.3d',2:11),"/")
