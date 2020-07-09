@@ -34,5 +34,5 @@ Many of the analyses require HPC. The scripts are not currently written for this
 
 Notes:
 
-* Script part_1.R needs to be run for each model ensemble member. Currently manual. One member analysis takes ~10hrs on HPC. The outputs must be manually saved and used in Part_1b. 
-** Output of each variable matrix should be saved as .csv to be used in Part_2 following file name of coef_SOILWATER.ann.011.csv for example. Change coef to lmg for the variance explained as a fraction.
+ * Script part_1.R needs to be run for each model ensemble member. Currently manual. One member analysis takes ~10hrs on HPC. The outputs must be manually saved and used in Part_1b. 
+ ** Output of each variable matrix should be saved as .csv to be used in Part_2 following file name of coef_SOILWATER.ann.011.csv for example. Change coef to lmg for the variance explained as a fraction.
