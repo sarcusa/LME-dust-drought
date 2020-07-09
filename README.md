@@ -4,15 +4,19 @@ Supporting code for analyzes performed for the manuscript Dust-Drought Nexus in 
 # Data source
 
 LME data can be downloaded from http://www.cesm.ucar.edu/projects/community-projects/LME/data-sets.html
+Paleo data can be downloaded from https://www.ncdc.noaa.gov/paleo/study/22454 (Living Blended Drought Atlas) and https://www.ncdc.noaa.gov/paleo/study/27078 (Blue Lake).
 
+# Required data & pre-processing
 
-# Required data
-
-1) Data for each variable should be stored for each model run in folders called runXXX, where XXX refers to the model run from 002 to 011
+For the model:
+1) Data for each variable should be stored for each model run in folders called runXXX, where XXX refers to the model run from 002 to 011, for the years 850-2005
 2) Variables to download include: SOILICE, SOILIQ, DSTFLXT, DSTDEP, TLAI, TSAI, FSNO, SOILWATER_10CM, U10
-3) Follow method from manuscript to prepare the variables. Eg. calculate fv from TLAI and TSAI, calculate fm, and cube U10
+3) Follow method from manuscript to prepare the variables. Eg. calculate fv from TLAI and TSAI, calculate fm, and cube of U10
 4) Surface data files are also necessary including: "surfdata_1.9x2.5_simyr1350_c131018.nc"
-5) 
+
+For the paleo:
+5) For Blue Lake, the data must be converted to LiPD file from http://lipd.net/playground.
+6) For the LBDA, the region of interest should be selected.
 
 # HPC computing
 
@@ -25,6 +29,8 @@ Many of the analyses require HPC. The scripts are not currently written for this
 3) Part_1a.R*
 4) Part_1b.R**
 4) Part_2.R
+5) Part_3.R
+6) Part_4.R
 
 Notes:
 
