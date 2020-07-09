@@ -1,5 +1,5 @@
 # LME-dust-drought
-Supporting code for analyzes performed for the manuscript Dust-Drought Nexus in the Southwestern United States: A Proxy-Model Comparison Approach by S. H. Arcusa, N. P. McKay, C. M. Carrillo and T. R. Ault 
+Supporting code for analyzes performed for the manuscript Dust-Drought Nexus in the Southwestern United States: A Proxy-Model Comparison Approach by S. H. Arcusa, N. P. McKay, C. M. Carrillo and T. R. Ault. 
 
 # Data source
 
