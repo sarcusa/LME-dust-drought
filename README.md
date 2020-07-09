@@ -4,6 +4,7 @@ Supporting code for analyzes performed for the manuscript Dust-Drought Nexus in 
 # Data source
 
 LME data can be downloaded from http://www.cesm.ucar.edu/projects/community-projects/LME/data-sets.html
+
 Paleo data can be downloaded from https://www.ncdc.noaa.gov/paleo/study/22454 (Living Blended Drought Atlas) and https://www.ncdc.noaa.gov/paleo/study/27078 (Blue Lake).
 
 # Required data & pre-processing
@@ -34,5 +35,6 @@ Many of the analyses require HPC. The scripts are not currently written for this
 
 Notes:
 
- * Script part_1.R needs to be run for each model ensemble member. Currently manual. One member analysis takes ~10hrs on HPC. The outputs must be manually saved and used in Part_1b. 
- ** Output of each variable matrix should be saved as .csv to be used in Part_2 following file name of coef_SOILWATER.ann.011.csv for example. Change coef to lmg for the variance explained as a fraction.
+(*) Script part_1.R needs to be run for each model ensemble member. Currently manual. One member analysis takes ~10hrs on HPC. The outputs must be manually saved and used in Part_1b. 
+ 
+(**) Output of each variable matrix should be saved as .csv to be used in Part_2 following file name of coef_SOILWATER.ann.011.csv for example. Change coef to lmg for the variance explained as a fraction.
